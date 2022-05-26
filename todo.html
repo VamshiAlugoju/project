@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <style>
+        #container {
+            position: absolute;
+            margin-left: 100px;
+            margin-top: 30px;
+        }
+
+        h4 {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <input type="text" class="form=-control" placeholder="Chapter Name" name="List" id="List">
+        <input type="button" class="btn" value="Add list" id="submitbtn">
+        <button id="clear-all-elements" onclick="clearallElements()">clear all</button>
+        <ol id="ordered-list">
+            <li>
+                <h4> This is one element</h4>
+                <button onclick="editfun(this)">edit</button>
+                <button class="rmbtn" onclick="removebtn(this)">remove</button>
+
+            </li>
+        </ol>
+    </div>
+
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
